@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&');
+
+* {
+    box-sizing: border-box;
+   padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-align: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'Lato', sans-serif;
+    line-height: 1.2;
+    font-size: 18px;
+    background-color: #fbfbfb;
+     
+    
+ } 
+ header{
+   display: flex;
+   background-color:#abce96 ;
+  
+ }
+ nav {
+     height: 50px;
+    width: 100%;
+ }  
+ .enlace {
+    position: absolute;
+    padding:2px 30px;
+ }
+ .logoleon {
+    height: 45px;
+    border-radius: 100px;
+ }
+ nav ul {
+    float: right;
+    margin-right: 20px;
+ }
+ nav ul li {
+    display: block;
+    margin:50px 0 ;
+    line-height: 30px;
+ }
+ nav ul li a{
+   font-size: 18px;
+
+ }
+
+
+
+ li a.menu-item, li a:hover {
+    background:#abce96;
+    color: #345c1e;
+    transition: .5s;
+ }
+ 
+ #check:checked ~ ul {
+left:0;
+ }
+
+ ul.menu {
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    background-color: #abce967a;
+    color: #153504;
+    top:0;
+    left: -100%;
+    text-align:center;
+    transition: all 0.5s;
+ }
+
+ .checkbtn {
+    font-size: 20px;
+    color: #fbfbfb;
+    float: right;
+   margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+   
+ }
+ .checkbtn:hover{
+   background-color: #718565c2;
+   color: #345c1e;
+   border-radius: 10%;
+ }
+ #check{
+    display: none;
+ }
+
+
+    
+ ul {
+    list-style:none;
+ }
+ 
+ a {
+    color: inherit;
+   text-decoration: none;  
+   
+ }
+ h1 {
+    text-align: center;
+    font-size: 28px;   
+    margin-top: 10%; 
+    
+    
+ }
+ h2 {
+    font-size: 26px;
+    
+ }
+ p{ 
+    margin: 15px;
+    
+     }
+
+
+main {
+    margin-top: 0%;
+    margin: 5%;
+    border: 0%;
+}
+.imagenflex{ display: flex;
+    justify-content: center;
+}
+.cambioflex{
+border-radius: 50%;
+width: 350px;
+}
+
+
+
+article.presentacion {
+text-align: center;
+color: black;
+}
+section#inico{
+display: flex;
+flex-direction: column;
+
+}
+p.hablemos{
+    font-size: 30px;
+    
+}
+
+
+.switch {
+  width: 60px;
+  height: 30px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 100px;
+  border: #428a31 solid 2px;
+  background-color: #709b59;
+
+}
+.descarga {
+   background-color:#a5d38b; 
+   border-radius: 10%;
+   color:#345c1e; 
+   padding: 10px 20px; 
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 10px 4px;
+   cursor: pointer;
+}
+a.descarga:hover {
+  background-color: #718565d8;
+  color: #345c1e;
+}
+article.hablemos{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+  font-size: 18px;
+}
+
+
+.cord {
+   background-color: rgb(165, 236, 213);
+   height: 100px;
+   width: 200px;
+}
+
+
+.hablemos {
+   background-color:#a7d18f ;
+   color:#153504;
+   border-radius: 10%;
+   font-size: 15px;
+   text-align: center;
+}
+
+
+
+ul#contacto.iconos  {
+ display:flex;
+justify-content:space-between;
+  margin: 2px;
+   padding: 4px;
+   border-radius: 10px;
+   margin-top: 20px;
+}
+
+img#contacto.iconos {
+   width: 5px;
+  
+}
+
+
+footer {
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgba(117, 172, 85, 0.993);
+color: #fbfbfb;
+margin-top: 5%;
+   
+}
+
+
+.switch i {
+   
+   font-size: 1rem;
+   color: #4ca170;
+  
+   
+}
+.menu li:last-child::before{
+   content:"";
+   position: absolute;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   background-color: #ffffff;
+  left: 0;
+   right: unset;
+ 
+}
+
+.menu li:last-child.activeSwich::before{
+   right: 0;
+   left: unset;
+   border: solid thin #eeebeb;
+    }
+
+    .menu li:last-child.activeSwich i:first-child{
+      color: #9ac0956e;
+    }
+
+    .menu li:last-child.activeSwich {
+      background-color:#bceea2;
+      border-radius: solid 2px #fff;
+   }
+body.activeSwich header{
+   background-color: #153504;
+}
+body.activeSwich ul.menu{
+   background-color: #153504af;
+   color: #fff;
+   
+}
+
+body.activeSwich article.hablemos {
+   background-color: #153504;
+   color: #fff;
+
+}
+body.activeSwich article.presentacion{
+   color: #fff;
+}
+body.activeSwich a.descarga{
+   background-color: #50be15;
+   
+   color: #ffffff;
+}
+body.activeSwich{
+   background-color: #345c1e;
+}
+body.activeSwich footer {
+   background-color: #153504;
+   color: #f1f3f0;
+}
+
+
+@media (min-width:1024px){
+    nav{  
+        
+   height: 90px;
+   
+     }
+     ul.menu {
+    position:fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: #abce96d2;
+    top: 0;
+   text-align:center;
+    transition: all 0.5s
+     }
+     
+
+ nav ul {
+    float:right;
+     margin-right: 20px; 
+  }
+  nav ul li {
+    
+     display: flex;
+     justify-content:left;
+     line-height: 50px;
+     margin: 0 2px;
+  }
+  nav ul li a{
+    color: #fff;
+    font-size: 18px;
+     border-radius: 3px;
+     font-size: 20px;
+     padding: 7px 13px;
+     text-transform: uppercase;
+     
+     
+  }
+  li a.enlaces, li a:hover {
+     background: #abce96;
+     border-radius: 100px;
+     transition: .5s;
+  }
+
+         .enlace{
+            padding:0;
+           
+        }
+        .logoleon {
+            height: 90px;
+            border-radius: 100px;
+        }
+        
+        main {
+            
+            margin-top: 5%;  
+        }
+        section#inicio{
+            display: flex;
+            flex-direction: row;
+        }
+   
+            .cambioflex{
+            border-radius: 50%;
+            width: 500px;
+            }
+
+   
+   
+    h1 {
+    font-size: 38px;   
+    margin-top: 10%; 
+    }
+   h2{
+    font-size: 38px;
+   }
+   
+    
+   article.hablemos{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   margin-top: 10%;
+}
+
+ a.descarga {
+    font-size:25px ;
+ }
+  
+ul#contacto.iconos {
+    margin-top: 10%;
+  justify-content: center;
+    justify-content: space-around;
+}
+.checkbtn {
+    font-size: 30px;
+  
+ }
+
+ ul#contacto.iconos  {
+    padding: 4px;
+    border-radius: 100px;
+    
+
+}
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
